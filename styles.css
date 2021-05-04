@@ -1,0 +1,285 @@
+/*
+Cody McHardy
+5/4/21
+"Fishing Website" Assignment
+Professor Jordan Gilmore
+styles.css
+*/
+.heroBanner{
+    background-image: url("gearBanner.jpg");
+    background-size: cover;
+    padding: 1em 3em 1em 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.heroTitle{
+    width: 60%;
+}
+.heroText{
+    font-size: 75px;
+    color: white;
+    text-shadow: black 5px 5px 2px;
+    margin-right: 0;
+}
+nav{
+    width: 37.5%;
+}
+nav ul li{
+    list-style-type: none;
+    text-align: right;
+    margin-right: 5px;
+}
+nav a{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    margin-right: 0;
+}
+a:hover{
+    text-decoration: underline red;
+}
+h2{
+    font-size: 44px;
+    text-align: center;
+}
+a{
+    color: black;
+}
+#socialBody{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2em;
+}
+#socialBody div{
+    width: 100%;
+}
+#socialBody a:hover img{
+    width: 95%;
+}
+#socialBody div img{
+    width: 100%;
+}
+#homeBody{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas:
+        "rodHighlight homeText homeText homeText bassArt"
+        "rodHighlight trophyHead trophyHead trophyHead ."
+        "rodHighlight champion1 champion2 champion3 gifHolder"
+        "foot foot foot foot foot"
+}
+.pageTitle{
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    background-image: linear-gradient(rgb(164, 186, 199) 10%,white );
+    margin: 0px;
+    padding: 0px 36px 72px 36px;
+}
+#homeText{
+    /*
+    background-image: linear-gradient(black 5%, white 95%);
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    */
+    margin-right: 0;
+    grid-area: homeText;
+    font-size: 24pt;
+    padding: 0em 2em;
+    border-bottom: black dashed 2px;
+    margin: 5px 5px 0px 5px;
+}
+#gifHolder{
+    grid-area: gifHolder;
+}
+#rodHighlight{
+    grid-area: rodHighlight;
+    text-align: center;
+    font-size: 16pt;
+    margin: 5px;
+}
+#rodHighlight img{
+    width: 100%;
+}
+#rodHighlight a{
+    color: black;
+}
+#justIn{
+    font-size: 18pt;
+}
+#trophyHead{
+    border-top: black dashed 2px;
+    grid-area: trophyHead;
+}
+#trophyHead h2{
+    font-size: 22pt;
+}
+#champion1{
+    grid-area: champion1;
+    padding: 2em;
+    text-align: center;
+    font-size: 14pt;
+}
+#champion1 img{
+    width: 100%;
+}
+#champion2{
+    grid-area: champion2;
+    padding: 2em;
+    text-align: center;
+    font-size: 14pt;
+}
+#champion2 img{
+    width: 100%;
+}
+#champion3{
+    grid-area: champion3;
+    padding: 2em;
+    text-align: center;
+    font-size: 14pt;
+}
+#champion3 img{
+    width: 100%;
+}
+#bassArt{
+    grid-area: bassArt;
+    height: 600px;
+    margin: 5px;
+}
+#bassArt img{
+    width: 85%;
+}
+#productBody h2{
+    font-size: 19pt;
+    width: 45%;
+    margin: 0 auto;
+}
+h3{
+    font-size: 26pt;
+    text-align: center;
+}
+#productBody p{
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    font-size: 16pt;
+}
+#spinfisherShowcase{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: dashed black 3px;
+}
+#spinfisherShowcase div{
+    width: 29%;
+}
+#rodPromo{
+    width: 35%;
+}
+#spinfisherShowcase div img{
+    width: 100%;
+}
+#luresBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#luresBox div{
+    width: 24%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#luresBox img{
+    width: 100%;
+}
+#luresBox div a{
+    font-size: 16pt;
+}
+#foot{
+    border-top: solid black 3px;
+    grid-area: foot;
+    font-size: 16pt;
+    text-align: center;
+}
+footer{
+    border-top: solid black 3px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16pt;
+}
+@media screen and (max-width: 915px)
+{
+    .heroTitle{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav ul li{
+        display: inline;
+    }
+    #homeBody{
+        grid-template-areas: 
+        "homeText homeText homeText homeText homeText"
+        ". trophyHead trophyHead trophyHead ."
+        ". champion1 champion2 champion3 ."
+        "foot foot foot foot foot";
+    }
+    #rodHighlight{
+        display: none;
+    }
+    #homeText{
+        border-bottom: none;
+    }
+    #spinfisherShowcase{
+        width: 100%;
+    }
+    #productBody h2{
+        width: 100%;
+    }
+    #productBody p{
+        width: 90%;
+    }
+    #luresBox div{
+        width: 45%;
+    }
+    #luresBox div a{
+        font-size: 18pt;
+    }
+}
+@media screen and (max-width:548px)
+{
+    nav a{
+        font-size: 33px;
+    }
+    .heroText{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:655px)
+{
+    #listItem2::after{
+        content: "\a";
+        white-space: pre;
+    }
+    #socialBody{
+        flex-wrap: wrap;
+    }
+    #socialBody div{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 1450px)
+{
+    #gifHolder{
+        display: none;
+    }
+    #bassArt{
+        display: none;
+    }
+}
